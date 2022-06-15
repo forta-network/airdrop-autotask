@@ -11,7 +11,7 @@ This autotask allows an eligible relayer to claim the FORT airdrop.
 ### Claim the FORT Tokens
 
 1. Login to your Defender Account
-2. Create an autotask using autotask.js contents, and connect your relayer to it (TBD)
+2. Create an autotask using autotask.js contents, and connect your relayer to it
 3. Ensure your relayer has mainnet funds for gas
 4. Run the autotask, and your relayer will receive the FORT Token
 
