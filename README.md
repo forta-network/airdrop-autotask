@@ -1,5 +1,7 @@
 # airdrop-autotask
 
+This autotask allows an eligible relayer to claim the FORT airdrop.
+
 ### View the amount you are eligible to receive
 
 1. Visit https://airdrop.forta.network
