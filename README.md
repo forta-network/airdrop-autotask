@@ -25,8 +25,3 @@ This autotask allows an eligible relayer to claim the FORT airdrop.
 - **FORT Value to Send**: Amount of FORT in wei
 4. Send the transaction
 
-Please let us know if you have any questions!
-
-Thanks,
-OpenZeppelin 
-
