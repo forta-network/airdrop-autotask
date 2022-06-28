@@ -46,7 +46,13 @@ async function handler(event) {
     const relayerAddress = await signer.getAddress();
     console.log(`Getting merkle leaf for ${relayerAddress}`)
 
-    const leafData = await axios.get(`${AIRDROP_BASE_URL}/proof?address=${relayerAddress}`)
+    const message = `Hello from Forta Airdrop! Sign this message to confirm you own this address ${Date.now()}`
+    const signature = await signer.signMessage(message)
+    const leafData = await axios.post(`${AIRDROP_BASE_URL}/proof`, {
+      address: relayerAddress,
+      message,
+      signature
+    })
     const { index, amount, proof } = leafData.data;
     if (!proof) {
         throw new Error(`${relayerAddress} is not eligible`)
